@@ -21,6 +21,7 @@ public class ContactServiceMockTest extends MockTest{
 		String nom = "ContactOk";
 		EasyMock.expect(dao.isContactExist(nom)).andReturn(false);
 		Capture<Contact> capture = EasyMock.newCapture();
+		
 		dao.creerContact(EasyMock.capture(capture));
 		//Fin de l'enregistrment
 		replayAll();
@@ -31,17 +32,6 @@ public class ContactServiceMockTest extends MockTest{
 		
 		Contact contact = capture.getValue();
 		Assert.assertEquals(nom, contact.getNom());
-	}
-	@Test
-	public void testSupprimerContactErr() {
-		
-		//Phase d'enregistrment des comportements
-		String nom = "ContactOk";
-		EasyMock.expect(dao.isContactExist(nom)).andReturn(true);
-		//Fin de l'enregistrment
-		replayAll();
-		//verification
-		verifyAll();
 	}
 	
 }
