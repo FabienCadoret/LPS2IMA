@@ -1,8 +1,11 @@
 package LPS2IMa.Cadoret.Contact;
 
 public interface IContactDAO {
-	public boolean isContactExist(String nom);
-	public Contact recupereContact(String nom);
-	public void creerContact(Contact contact);
-	public Contact supprimerContact(String nom);
+    boolean isContactExist(String nom);
+
+    Contact recupereContact(String nom);
+
+    void creerContact(Contact contact);
+
+    Contact supprimerContact(String nom);
 }
