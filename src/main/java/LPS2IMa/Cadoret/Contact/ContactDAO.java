@@ -39,7 +39,7 @@ public class ContactDAO implements IContactDAO {
         while (!result && contacts.size() > i) {
             if (contacts.get(i).getNom() == nom) {
                 unContact = contacts.get(i);
-                System.out.println("Contact Recuperer");
+
                 result = true;
             }
             i++;
