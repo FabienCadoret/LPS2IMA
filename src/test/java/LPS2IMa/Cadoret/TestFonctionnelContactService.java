@@ -1,9 +1,10 @@
 package LPS2IMa.Cadoret;
 
-import LPS2IMa.Cadoret.Contact.ContactService;
-import LPS2IMa.Cadoret.Contact.Contact;
 import org.junit.Before;
 import org.junit.Test;
+
+import LPS2IMa.Cadoret.Contact.Contact;
+import LPS2IMa.Cadoret.Contact.ContactService;
 
 public class TestFonctionnelContactService {
 
@@ -12,12 +13,6 @@ public class TestFonctionnelContactService {
     @Before
     public void setUp() {
         service = new ContactService();
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void testSupprimerContactOk() {
-        service.supprimerContact(null);
-
     }
 
     @Test(expected = IllegalArgumentException.class)

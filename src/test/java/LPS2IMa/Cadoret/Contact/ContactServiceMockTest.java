@@ -28,7 +28,7 @@ public class ContactServiceMockTest extends MockTest {
         replayAll();
 
         service.creerContact(nom, "00");
-        // verificatio
+        // verification
         verifyAll();
 
         Contact contact = capture.getValue();
