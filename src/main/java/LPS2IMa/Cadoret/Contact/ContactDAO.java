@@ -59,7 +59,6 @@ public class ContactDAO implements IContactDAO {
                 while (!result && contacts.size() > i) {
                     if (contacts.get(i).getNom() == nom) {
                         unContact = contacts.remove(i);
-                        System.out.println("Contact suprimer");
                         result = true;
                     }
                     i++;

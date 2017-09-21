@@ -10,7 +10,6 @@ public class ContactService {
             }
             Contact contact = new Contact(nom, tel);
             contactDAO.creerContact(contact);
-            // contactDAO.recupereContact("Cadoret");
         } else {
             throw new IllegalArgumentException("Nom ou tel invalide");
         }
