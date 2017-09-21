@@ -14,7 +14,7 @@ public class ContactServiceMockTest extends MockTest{
 	@Mock
 	private IContactDAO dao;
 	
-	@Test
+	/*@Test
 	public void testCreerContactErr() {
 		
 		//Phase d'enregistrment des comportements
@@ -43,5 +43,5 @@ public class ContactServiceMockTest extends MockTest{
 		//verification
 		verifyAll();
 	}
-	
+	*/
 }
