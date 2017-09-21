@@ -15,7 +15,7 @@ public class ContactServiceMockTest extends MockTest{
 	private IContactDAO dao;
 	
 	@Test
-	public void testCreerContactErr() {
+	public void testCreerContact() {
 		
 		//Phase d'enregistrment des comportements
 		String nom = "ContactOk";
@@ -33,5 +33,6 @@ public class ContactServiceMockTest extends MockTest{
 		Contact contact = capture.getValue();
 		Assert.assertEquals(nom, contact.getNom());
 	}
+
 	
 }
